@@ -48,6 +48,9 @@ public class RomanNumeralConverterTest {
 
         assertEquals(Integer.valueOf(2019), sut.decode("MMXIX"));
     }
+    @Test public void decodeCD() {
+        assertThat(sut.decode("CD"), is(400));
+    }
 
     @Test
     public void encodeOne() {
@@ -76,7 +79,16 @@ public class RomanNumeralConverterTest {
     @Test public void encode4() {
         assertThat(sut.encode(4), is("IV"));
     }
+    @Test public void encode40() {
+        assertThat(sut.encode(40), is("XL"));
+    }
+    @Test public void encode400() {
+        assertThat(sut.encode(400), is("CD"));
+    }
     @Test public void encode9() {
         assertThat(sut.encode(9), is("IX"));
+    }
+    @Test public void encode444() {
+        assertThat(sut.encode(444), is("CDXLIV"));
     }
 }

@@ -41,8 +41,10 @@ public class RomanNumeralConverter {
                 new Tuple(5, "V"),
                 new Tuple(9, "IX"),
                 new Tuple(10, "X"),
+                new Tuple(40, "XL"),
                 new Tuple(50, "L"),
                 new Tuple(100, "C"),
+                new Tuple(400, "CD"),
                 new Tuple(500, "D"),
                 new Tuple(1000, "M")
         ).collect(Collectors.toList()));
