@@ -91,4 +91,8 @@ public class RomanNumeralConverterTest {
     @Test public void encode444() {
         assertThat(sut.encode(444), is("CDXLIV"));
     }
+
+    @Test public void encode17651() {
+        assertThat(sut.encode(17651), is("MMMMMMMMMMMMMMMMMDCLI"));
+    }
 }

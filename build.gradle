@@ -29,4 +29,10 @@ dependencies {
 }
 
 // Define the main class for the application
-mainClassName = 'edu.xavier.csci.dentinger.App'
+mainClassName = 'edu.xavier.csci.dentinger.RomanNumeralApplication'
+
+jar {
+    manifest {
+        attributes "Main-Class": mainClassName
+    }
+}
